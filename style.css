@@ -50,3 +50,78 @@ body {
 .text-color-400 {
   color: rgb(108, 108, 108);
 }
+.text-color-500 {
+  color: rgba(0, 0, 0, 0.87);
+}
+.text-color-600 {
+  color: rgb(120, 120, 133);
+}
+
+/* Common font weight */
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+
+/* Common font size */
+.font-size-16 {
+  font-size: 1rem;
+}
+.font-size-24 {
+  font-size: 1.5rem;
+}
+.font-size-52 {
+  font-size: 3.25rem;
+}
+
+/* Common margin */
+.margin-left-20 {
+  margin-left: 20px;
+}
+
+/* cursor */
+.cursor-pointer:hover{
+    cursor: pointer;
+}
+/* Container */
+.container {
+  margin: 20px auto 0;
+  width: 95%;
+  max-width: 1440px;
+}
+/* Nav */
+nav .burger {
+  display: none;
+}
+
+.nav-items {
+  list-style-type: none;
+}
+.nav-item a {
+  text-decoration: none;
+}
+
+/* Media queries for mobile device */
+@media screen and (max-width: 675px) {
+  nav .burger {
+    display: block;
+  }
+  nav {
+    padding: 0 10px;
+    justify-content: center;
+  }
+  .nav-item {
+    display: none;
+  }
+  .shopping-cart {
+    display: block;
+  }
+}
