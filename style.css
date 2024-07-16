@@ -7,3 +7,46 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+/* Common style */
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-evenly {
+  justify-content: space-evenly;
+}
+.align-items {
+  align-items: center;
+}
+.border-red {
+  border: 3px solid red;
+}
+.border-balck {
+  border: 3px solid black;
+}
+
+/* Common text color */
+.text-color-100 {
+  color: rgb(58, 58, 58);
+}
+.text-color-200 {
+  color: rgb(24, 25, 31);
+}
+.text-color-300 {
+  color: rgb(10, 8, 38);
+}
+.text-color-400 {
+  color: rgb(108, 108, 108);
+}
