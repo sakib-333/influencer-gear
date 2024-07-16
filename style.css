@@ -14,6 +14,7 @@ body {
 }
 .flex-column {
   display: flex;
+  flex-direction: column;
 }
 .justify-center {
   justify-content: center;
@@ -78,18 +79,38 @@ body {
 .font-size-24 {
   font-size: 1.5rem;
 }
-.font-size-52 {
-  font-size: 3.25rem;
+.font-size-48 {
+  font-size: 3rem;
 }
 
 /* Common margin */
-.margin-left-20 {
-  margin-left: 20px;
+.margin-left-25 {
+  margin-left: 25px;
+}
+.margin-top-50 {
+  margin-top: 50px;
+}
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
 }
 
+/* Common button */
+.btn {
+  width: 196px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  color: #fff;
+  background: rgb(224, 44, 109);
+}
 /* cursor */
-.cursor-pointer:hover{
-    cursor: pointer;
+.cursor-pointer:hover {
+  cursor: pointer;
 }
 /* Container */
 .container {
@@ -109,6 +130,32 @@ nav .burger {
   text-decoration: none;
 }
 
+/* Banner */
+.banner-text-cont {
+  width: 55%;
+  /* max-width: 455px; */
+}
+.banner-img-cont {
+  width: 35%;
+  aspect-ratio: 1;
+  background-image: url("./assets/images/circle-design.svg");
+  background-size: 100% 100%;
+}
+.banner-img-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn-preebook-now {
+  border-radius: 41px;
+}
+.btn-preebook-now i {
+  transition: 0.1s ease-in;
+}
+
+.btn-preebook-now:hover i {
+  transform: translateX(50%);
+}
 /* Media queries for mobile device */
 @media screen and (max-width: 675px) {
   nav .burger {
@@ -123,5 +170,28 @@ nav .burger {
   }
   .shopping-cart {
     display: block;
+    margin-left: 0;
+  }
+  .banner {
+    margin: 20px auto 0;
+    flex-direction: column-reverse;
+    width: 95%;
+  }
+  .banner-text-cont {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-img-cont {
+    width: 70%;
+  }
+}
+/* Media queries for medium device */
+@media screen and (min-width: 675px) and (max-width: 898px) {
+  .banner-text-cont h1 {
+    font-size: 2.2rem;
   }
 }
