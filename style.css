@@ -96,6 +96,9 @@ body {
 }
 
 /* Common margin */
+.margin-right-10 {
+  margin-right: 10px;
+}
 .margin-left-15 {
   margin-left: 15px;
 }
@@ -273,6 +276,20 @@ nav .burger {
 }
 .btn-join-now:hover i {
   transform: translateX(50%);
+}
+
+/* Footer */
+footer {
+  padding: 25px 0;
+  margin-top: 100px;
+  width: 100%;
+  background-color: rgb(10, 8, 38);
+  color: #fff;
+  text-align: center;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #fff;
 }
 /* Media queries for mobile device */
 @media screen and (max-width: 675px) {
